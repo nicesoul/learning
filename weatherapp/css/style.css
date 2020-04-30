@@ -1,20 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap");
-*{
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   /* border: 1px solid gold; */
   font-family: "Mukta", Arial, sans-serif;
 }
+
 body {
   padding: 5px;
   background-color: #ffffdd;
 }
+
 hr {
   height: 1px;
   background-color: gold;
   border: none;
 }
+
 /*simple style for <hr> below 
 hr {
   border-top: 6px solid gold;
@@ -23,14 +27,12 @@ hr {
 
 div.card {
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px;
   width: fit-content;
   word-wrap: break-word;
-  /* max-width: 580px; */
   border: 1px solid gold;
   border-radius: 15px;
   background-color: #ffffee;
-  /* background-color: green; */
 }
 
 p.description {
@@ -41,7 +43,7 @@ p.description {
   margin: 8px 0;
   font-weight: 700;
   font-size: 15px;
-  color: #333;
+  /* color: #333; */
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -51,31 +53,34 @@ div.numbers div {
   vertical-align: middle;
   /* padding: 5px; */
 }
+
 div.numbers .temp {
   font-weight: 300;
   font-size: 96px;
 }
+
 div.numbers .temp .unit {
   font-weight: 700;
   font-size: 40px;
   vertical-align: super;
 }
 
-* img{
+* img {
   max-width: 200px;
 }
-div.numbers .measurements *{
-  padding-left: 20px;
+
+div.numbers .measurements * {
+  padding-left: 30px;
 }
+
 div.numbers .measurements .label {
-  color: #333;
+  /* color: #333; */
+  font-size: large;
 }
-div.hourly{
-/* display: grid; */
-/* grid-template-columns: repeat(5, 1fr); */
-/* display: inline; */
-display: flex;
-flex-wrap: wrap;
+
+div.hourly {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 div.hourly div {
@@ -83,38 +88,31 @@ div.hourly div {
   flex-direction: column;
   text-align: center;
 }
+
 div.search .city {
   font-weight: 700;
   font-size: 27px;
+  padding-right: 20px;
 }
+
 div.search input {
-  /* display: none; */
-  /* margin: 0; */
-  /* margin-bottom: -4px; */
-  /* padding: 0; */
-  /* line-height: 1.3; */
   max-width: 200px;
   background: none;
   border: none;
-  /* outline: none; */
-  /* font-weight: 700; */
   font-size: 27px;
 }
+
 div.search input:focus {
   outline: none;
 }
+
 div.search ._send {
   display: inline-block;
   background: none;
   outline: none;
-  /* border: none; */
-  /* display: none; */
 }
-div.search ._edit > img {
-  width: 16px;
-}
-div.search ._edit:hover, ._send:hover {
+
+div.search ._send:hover, div .search ._send:focus {
   cursor: pointer;
-  /* color: aqua; */
-  background: #ffffbb;
+  background: gold;
 }
