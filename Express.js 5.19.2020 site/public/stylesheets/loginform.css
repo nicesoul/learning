@@ -1,0 +1,164 @@
+/* this document should get a new fixed color palette */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: 'Fira Sans', sans-serif;
+}
+:root{
+    --font-size-large: Calc(16px + 1.4vw);
+    --font-size-normal: Calc(14px + 0.7vw);
+    --font-size-small: Calc(12px + 0.5vw);
+    --font-size-mono-small: Calc(12px + 0.35vw);
+}
+/* WAVE Web Accessibility Evaluation Tool https://wave.webaim.org/
+https://webaim.org/resources/contrastchecker/ */
+*::selection{
+    background-color: burlywood;
+    color: #111111;
+}
+/* additional class for this particular form is ${element_name}-gray-green
+this would allow you to style it separately from other containers */
+.container-gray-green {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: row; 
+}
+.form-gray-green {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30vw;
+    min-width: 200px;
+    padding: 2vmin;
+    background-color: hsl(120, 80%, 98%);
+}
+.form-gray-green input {
+    font-size: var(--font-size-normal);
+}
+.form-gray-green label {
+    color: gray;
+    font-size: var(--font-size-normal);
+}
+.form-gray-green label:hover {
+    color: green;
+}
+.input-gray-green::placeholder {/* is this still not standart? */
+    font-size: var(--font-size-mono-small);
+}
+.input-gray-green:hover::placeholder { 
+    color: green;
+}
+.input-gray-green:focus{
+    border-color: greenyellow;
+}
+.input-gray-green[type=text],
+.input-gray-green[type=password] {
+    padding: 1vmin;
+    margin-top: 1vmin;
+    margin-bottom: 1vmin;
+}
+.button-gray-green {
+    background-color: cadetblue;
+    color: yellow;
+    padding: 1vmin;
+    margin: 1vmin 0px;
+    border: none;
+    cursor: pointer;
+    font-size: var(--font-size-normal);
+    transition: background-color 0.7s;
+}
+.button-gray-green:hover, .button-gray-green:focus {
+    background-color: forestgreen;
+}
+/* hide standart checkbox for all inputs in a Document? */
+/* doesn't work in Firefox )))) */
+input[type=checkbox] {
+    cursor: pointer;
+    position: absolute;
+    width: 0.01px;
+    margin-left: 1px;
+}
+/* .checkbox-container {
+    display: flex;
+    align-items: center;
+} */
+.checkbox-container label {
+    display: flex;
+    cursor: pointer;
+    font-size: var(--font-size-small);
+}
+.checkbox-container label::before{
+    content: '';
+    width: 1em;
+    height: 1em;
+    border-radius: .2em;
+    margin-right: .5em;
+    border: .05em solid gray;
+}
+.checkbox-container label:hover::before {
+    box-shadow: 0 0 10px 2px green;
+    border-color: black;
+} 
+.checkbox-container input[type='checkbox']:focus+label::before {
+    box-shadow: 0 0 10px 2px green;
+    border-color: black;    
+}  
+.checkbox-container input[type='checkbox']:checked+label::before {
+    content: '\002713';
+    background-color: limegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+}
+.checkbox-container input[type='checkbox']:active+label::before{
+    background-color: cadetblue;
+} 
+.checkbox-container input[type='checkbox']:disabled+label,
+.checkbox-container input[type='checkbox']:disabled {
+    color: lightgray;
+    cursor: default;
+}
+.checkbox-container input[type='checkbox']:disabled+label::before {
+    background-color: white;
+    color: #111111;
+    box-shadow: 0 0 10px 2px gray;
+    /* border-color: #999; */
+}
+
+#smile{
+    margin-top: 1vh;
+    color: lightgray;
+    font-size: var(--font-size-large);
+    text-align: center;
+    animation: smile_fade_out 1.2s ease-in;
+    transition: color 1s;
+    /* animation: example 2s ease 0s 1 alternate; */
+    /* animation: name    duration timing-function delay iteration-count direction fill-mode; */
+}
+#smile:hover {
+    color:teal;
+}
+@keyframes smile_fade_out {
+    from {color: teal;}
+    to {color: lightgray;}
+  }
+
+
+
+  /* added styles only for a test Express JS site */
+  .back {
+    display: inline-block;
+    background: none;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: large;
+  }
+  
+  .back:hover, .back:focus {
+    cursor: pointer;
+    background: gold;
+  }

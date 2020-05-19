@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Atilla's weather site</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/stylesheets/weatherstyle.css">
+
+  </head>
+
+<body>
+  <div class="card">
+     <br>
+    <div class="search">
+      <span class="city">London</span>
+      <span><input type="text" placeholder="Search for a city..." id="input_search"></span>
+      <button class="_send" type="button">search</button>
+
+    </div>
+    <hr><br>
+    <p class="description">Heavy intensity rain</p>
+    <p class="date">Sunday, 12 April 2020</p>
+    <hr>
+    <div class="numbers">
+      <div class="temp">
+        <span>13</span><sup class="unit">°C</sup>
+      </div>
+
+      <div class="icon">
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" id="icon1">
+      </div>
+
+      <div>
+        <table class="measurements">
+          <tr>
+            <td class="label">Pressure</td>
+            <td class="value pressure">1001 hPa</td>
+          </tr>
+          <tr>
+            <td class="label">Humidity</td>
+            <td class="value humidity">77%</td>
+          </tr>
+          <tr>
+            <td class="label">Wind speed</td>
+            <td class="value windspeed">11.17 meters / sec</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="hourly">
+      <div>
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+        <span class="hours">9 AM</span>
+      </div>
+
+      <div>
+        <img src="http://openweathermap.org/img/wn/09d@2x.png" alt="">
+        <span class="hours">12 AM</span>
+      </div>
+
+      <div>
+        <img src="http://openweathermap.org/img/wn/09d@2x.png" alt="">
+        <span class="hours">15 PM</span>
+      </div>
+
+      <div>
+        <img src="http://openweathermap.org/img/wn/09d@2x.png" alt="">
+        <span class="hours">18 PM</span>
+      </div>
+
+      <div>
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+        <span class="hours">21 PM</span>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <br>
+  <div class="card"><a href="/" class="back">Go back</a></div>
+   <script src="javascripts/weatherapp.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid gold; */
+  font-family: "Mukta", Arial, sans-serif;
+}
+
+body {
+  padding: 5px;
+  background-color: #ffffdd;
+}
+
+hr {
+  height: 1px;
+  background-color: gold;
+  border: none;
+}
+
+/*simple style for <hr> below 
+hr {
+  border-top: 6px solid gold;
+}
+*/
+
+div.card {
+  margin: 0 auto;
+  padding: 30px;
+  width: fit-content;
+  max-width: 600px;
+  word-wrap: break-word;
+  border: 1px solid gold;
+  border-radius: 15px;
+  background-color: #ffffee;
+}
+
+p.description {
+  font-size: 27px;
+}
+
+.date {
+  margin: 8px 0;
+  font-weight: 700;
+  font-size: 15px;
+  /* color: #333; */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+div.numbers div {
+  display: inline-block;
+  vertical-align: middle;
+  /* padding: 5px; */
+}
+
+div.numbers .temp {
+  font-weight: 300;
+  font-size: 96px;
+}
+
+div.numbers .temp .unit {
+  font-weight: 700;
+  font-size: 40px;
+  vertical-align: super;
+}
+
+* img {
+  max-width: 200px;
+}
+
+div.numbers .measurements * {
+  padding-left: 30px;
+}
+
+div.numbers .measurements .label {
+  /* color: #333; */
+  font-size: large;
+}
+
+div.hourly {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.hourly div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+div.search .city {
+  font-weight: 700;
+  font-size: 27px;
+  padding-right: 20px;
+}
+
+div.search input {
+  max-width: 200px;
+  background: none;
+  border: none;
+  font-size: 27px;
+}
+
+div.search input:focus {
+  outline: none;
+}
+
+div.search ._send {
+  display: inline-block;
+  background: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 0 5px;
+}
+
+div.search ._send:hover, div .search ._send:focus {
+  cursor: pointer;
+  background: gold;
+}
+
+.back {
+  display: inline-block;
+  background: none;
+  /* border: gold; */
+  padding: 10px;
+  margin-right: 10px;
+  font-size: large;
+  border-radius: 5px;
+}
+
+.back:hover, .back:focus {
+  cursor: pointer;
+  background: gold;
+}
