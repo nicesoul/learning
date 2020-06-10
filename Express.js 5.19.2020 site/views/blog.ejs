@@ -1,14 +1,17 @@
-<!-- NO BLOG PAGE YET -->
 <% include header %>
-<div class="container">
-    <% include menu %>
-    <h1><%= title %></h1>
-    <form action="/blog" method="POST">
-    <label for="Title">Title</label>
-    <input type="text" name="title" placeholder="Enter a title">
-    <br><label for="Body">Body</label>
-    <input type="text" name="data" placeholder="Enter some content">
-    <br>
+<body>
     
-    </form>
+
+<div class="container">
+    <!-- <% include menu %> -->
+  <h1><%= title %></h1>
+  <form action="/blog/add" method="POST"> <!-- localhost:5000/blog/add -->
+  <label>Title</label>
+  <input type="text" name="title" placeholder="Enter a title"><br>
+  <label>Body</label>
+  <textarea name="content" placeholder="paste the article"></textarea><br>
+  <input type="submit" value="add">
+  </form>
 </div>
+</body>
+</html>
