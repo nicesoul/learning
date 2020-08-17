@@ -114,5 +114,15 @@ function initialSearch() {
             divHourlyTemp[2].innerText = data.list[2].dt_txt.slice(12, 16) + ' - ' + Number(data.list[2].main.temp - 273.15).toFixed(0) + '°C';
             divHourlyTemp[3].innerText = data.list[3].dt_txt.slice(12, 16) + ' - ' + Number(data.list[3].main.temp - 273.15).toFixed(0) + '°C';
             divHourlyTemp[4].innerText = data.list[4].dt_txt.slice(12, 16) + ' - ' + Number(data.list[4].main.temp - 273.15).toFixed(0) + '°C';
+            let icon1 = data.list[0].weather[0].icon;
+            let icon2 = data.list[1].weather[0].icon;
+            let icon3 = data.list[2].weather[0].icon;
+            let icon4 = data.list[3].weather[0].icon;
+            let icon5 = data.list[4].weather[0].icon;
+            _1.src = "http://openweathermap.org/img/wn/" + icon1 + "@2x.png";
+            _2.src = "http://openweathermap.org/img/wn/" + icon2 + "@2x.png";
+            _3.src = "http://openweathermap.org/img/wn/" + icon3 + "@2x.png";
+            _4.src = "http://openweathermap.org/img/wn/" + icon4 + "@2x.png";
+            _5.src = "http://openweathermap.org/img/wn/" + icon5 + "@2x.png";
         })
 }
