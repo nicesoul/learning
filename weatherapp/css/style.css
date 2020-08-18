@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 1px solid gold; */
+    /* border: 1px solid gold; */
   font-family: "Mukta", Arial, sans-serif;
 }
 
@@ -29,6 +29,8 @@ div.card {
   margin: 0 auto;
   padding: 30px;
   width: fit-content;
+  width: -webkit-fit-content; /* thank to autoprefixer it is fine in Safari and Firefox now */
+  width: -moz-fit-content;    /* https://autoprefixer.github.io */
   word-wrap: break-word;
   border: 1px solid gold;
   border-radius: 15px;

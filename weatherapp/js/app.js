@@ -1,5 +1,6 @@
 const result = document.querySelector('.result');
-const API_key = 'appid=f6211bc24c258c57f7a7fba887afdd17'; // Atilla's key
+const API_key = 'appid=e3449991bfbd0aef96e11a4b0006e2f2'; // Nicesoul's key
+// const API_key = 'appid=f6211bc24c258c57f7a7fba887afdd17'; // Atilla's key
 const API_currentWeather = 'http://api.openweathermap.org/data/2.5/weather';
 const API_forecast = 'https://api.openweathermap.org/data/2.5/forecast';
 const searchinput = document.querySelector('#input_search');
