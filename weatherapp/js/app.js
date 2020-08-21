@@ -58,7 +58,7 @@ function sendSearch() {
                 divDate.innerText = new Date().toLocaleString();
                 divTemp.innerText = Number(data.main.temp - 273.15).toFixed(0);
                 let icon = data.weather[0].icon;
-                divIcon.src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+                divIcon.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
                 divPressure.innerText = data.main.pressure + ' hPa';
                 divHumidity.innerText = data.main.humidity + ' %';
                 divWindSpeed.innerText = data.wind.speed + ' m/s';
@@ -83,11 +83,11 @@ function getForecast(city) {
             let icon3 = data.list[2].weather[0].icon;
             let icon4 = data.list[3].weather[0].icon;
             let icon5 = data.list[4].weather[0].icon;
-            _1.src = "http://openweathermap.org/img/wn/" + icon1 + "@2x.png";
-            _2.src = "http://openweathermap.org/img/wn/" + icon2 + "@2x.png";
-            _3.src = "http://openweathermap.org/img/wn/" + icon3 + "@2x.png";
-            _4.src = "http://openweathermap.org/img/wn/" + icon4 + "@2x.png";
-            _5.src = "http://openweathermap.org/img/wn/" + icon5 + "@2x.png";
+            _1.src = "https://openweathermap.org/img/wn/" + icon1 + "@2x.png";
+            _2.src = "https://openweathermap.org/img/wn/" + icon2 + "@2x.png";
+            _3.src = "https://openweathermap.org/img/wn/" + icon3 + "@2x.png";
+            _4.src = "https://openweathermap.org/img/wn/" + icon4 + "@2x.png";
+            _5.src = "https://openweathermap.org/img/wn/" + icon5 + "@2x.png";
         })
 }
 
@@ -102,7 +102,7 @@ function initialSearch() {
             divDate.innerText = new Date().toLocaleString();
             divTemp.innerText = Number(data.main.temp - 273.15).toFixed(0);
             let icon = data.weather[0].icon;
-            divIcon.src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+            divIcon.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
             divPressure.innerText = data.main.pressure + ' hPa';
             divHumidity.innerText = data.main.humidity + ' %';
             divWindSpeed.innerText = data.wind.speed + ' m/s';
@@ -120,10 +120,10 @@ function initialSearch() {
             let icon3 = data.list[2].weather[0].icon;
             let icon4 = data.list[3].weather[0].icon;
             let icon5 = data.list[4].weather[0].icon;
-            _1.src = "http://openweathermap.org/img/wn/" + icon1 + "@2x.png";
-            _2.src = "http://openweathermap.org/img/wn/" + icon2 + "@2x.png";
-            _3.src = "http://openweathermap.org/img/wn/" + icon3 + "@2x.png";
-            _4.src = "http://openweathermap.org/img/wn/" + icon4 + "@2x.png";
-            _5.src = "http://openweathermap.org/img/wn/" + icon5 + "@2x.png";
+            _1.src = "https://openweathermap.org/img/wn/" + icon1 + "@2x.png";
+            _2.src = "https://openweathermap.org/img/wn/" + icon2 + "@2x.png";
+            _3.src = "https://openweathermap.org/img/wn/" + icon3 + "@2x.png";
+            _4.src = "https://openweathermap.org/img/wn/" + icon4 + "@2x.png";
+            _5.src = "https://openweathermap.org/img/wn/" + icon5 + "@2x.png";
         })
 }
