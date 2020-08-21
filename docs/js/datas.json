@@ -1,0 +1,230 @@
+{
+    "cod": "200",
+    "message": 0,
+    "cnt": 6,
+    "list": [
+        {
+            "dt": 1588194000,
+            "main": {
+                "temp": 284.87,
+                "feels_like": 281.21,
+                "temp_min": 283.77,
+                "temp_max": 284.87,
+                "pressure": 999,
+                "sea_level": 999,
+                "grnd_level": 996,
+                "humidity": 69,
+                "temp_kf": 1.1
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "overcast clouds",
+                    "icon": "04n"
+                }
+            ],
+            "clouds": {
+                "all": 100
+            },
+            "wind": {
+                "speed": 3.99,
+                "deg": 207
+            },
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2020-04-29 21:00:00"
+        },
+        {
+            "dt": 1588204800,
+            "main": {
+                "temp": 283.62,
+                "feels_like": 279.21,
+                "temp_min": 282.98,
+                "temp_max": 283.62,
+                "pressure": 997,
+                "sea_level": 997,
+                "grnd_level": 994,
+                "humidity": 81,
+                "temp_kf": 0.64
+            },
+            "weather": [
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "light rain",
+                    "icon": "10n"
+                }
+            ],
+            "clouds": {
+                "all": 100
+            },
+            "wind": {
+                "speed": 5.41,
+                "deg": 194
+            },
+            "rain": {
+                "3h": 0.98
+            },
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2020-04-30 00:00:00"
+        },
+        {
+            "dt": 1588215600,
+            "main": {
+                "temp": 281.76,
+                "feels_like": 276.69,
+                "temp_min": 281.48,
+                "temp_max": 281.76,
+                "pressure": 997,
+                "sea_level": 997,
+                "grnd_level": 994,
+                "humidity": 71,
+                "temp_kf": 0.28
+            },
+            "weather": [
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "light rain",
+                    "icon": "10n"
+                }
+            ],
+            "clouds": {
+                "all": 100
+            },
+            "wind": {
+                "speed": 5.27,
+                "deg": 228
+            },
+            "rain": {
+                "3h": 2.8
+            },
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2020-04-30 03:00:00"
+        },
+        {
+            "dt": 1588226400,
+            "main": {
+                "temp": 281.86,
+                "feels_like": 276.47,
+                "temp_min": 281.83,
+                "temp_max": 281.86,
+                "pressure": 997,
+                "sea_level": 997,
+                "grnd_level": 995,
+                "humidity": 66,
+                "temp_kf": 0.03
+            },
+            "weather": [
+                {
+                    "id": 802,
+                    "main": "Clouds",
+                    "description": "scattered clouds",
+                    "icon": "03d"
+                }
+            ],
+            "clouds": {
+                "all": 50
+            },
+            "wind": {
+                "speed": 5.49,
+                "deg": 217
+            },
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2020-04-30 06:00:00"
+        },
+        {
+            "dt": 1588237200,
+            "main": {
+                "temp": 285.08,
+                "feels_like": 278.32,
+                "temp_min": 285.08,
+                "temp_max": 285.08,
+                "pressure": 996,
+                "sea_level": 996,
+                "grnd_level": 993,
+                "humidity": 58,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "light rain",
+                    "icon": "10d"
+                }
+            ],
+            "clouds": {
+                "all": 19
+            },
+            "wind": {
+                "speed": 7.75,
+                "deg": 201
+            },
+            "rain": {
+                "3h": 0.15
+            },
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2020-04-30 09:00:00"
+        },
+        {
+            "dt": 1588248000,
+            "main": {
+                "temp": 286.33,
+                "feels_like": 279.41,
+                "temp_min": 286.33,
+                "temp_max": 286.33,
+                "pressure": 993,
+                "sea_level": 993,
+                "grnd_level": 991,
+                "humidity": 54,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "light rain",
+                    "icon": "10d"
+                }
+            ],
+            "clouds": {
+                "all": 54
+            },
+            "wind": {
+                "speed": 8.02,
+                "deg": 190
+            },
+            "rain": {
+                "3h": 0.29
+            },
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2020-04-30 12:00:00"
+        }
+    ],
+    "city": {
+        "id": 2643743,
+        "name": "London",
+        "coord": {
+            "lat": 51.5085,
+            "lon": -0.1257
+        },
+        "country": "GB",
+        "population": 1000000,
+        "timezone": 3600,
+        "sunrise": 1588134918,
+        "sunset": 1588188005
+    }
+}

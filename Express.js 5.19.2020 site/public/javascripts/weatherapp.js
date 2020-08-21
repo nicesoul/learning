@@ -1,5 +1,6 @@
 const result = document.querySelector('.result');
-const API_key = 'appid=f6211bc24c258c57f7a7fba887afdd17'; // Atilla's key
+const API_key = 'appid=e3449991bfbd0aef96e11a4b0006e2f2'; // Nicesoul's key
+// const API_key = 'appid=f6211bc24c258c57f7a7fba887afdd17'; // Atilla's key
 const API_currentWeather = 'http://api.openweathermap.org/data/2.5/weather';
 const API_forecast = 'https://api.openweathermap.org/data/2.5/forecast';
 const searchinput = document.querySelector('#input_search');
@@ -72,11 +73,11 @@ function getForecast(city) {
     fetch(API_URL2)
         .then(response => response.json())
         .then(data => { // this is a mess ))    COPY-PASTING IS A BAD HABIT )  but no time to clean this up Now, sorry ))) I'll refactor it later!
-            t1.innerText = data.list[0].dt_txt.slice(12, 16) + ' - ' + Number(data.list[0].main.temp - 273.15).toFixed(0) + '°C';
-            t2.innerText = data.list[1].dt_txt.slice(12, 16) + ' - ' + Number(data.list[1].main.temp - 273.15).toFixed(0) + '°C';
-            t3.innerText = data.list[2].dt_txt.slice(12, 16) + ' - ' + Number(data.list[2].main.temp - 273.15).toFixed(0) + '°C';
-            t4.innerText = data.list[3].dt_txt.slice(12, 16) + ' - ' + Number(data.list[3].main.temp - 273.15).toFixed(0) + '°C';
-            t5.innerText = data.list[4].dt_txt.slice(12, 16) + ' - ' + Number(data.list[4].main.temp - 273.15).toFixed(0) + '°C';
+            t1.innerText = data.list[0].dt_txt.slice(11, 16) + ' - ' + Number(data.list[0].main.temp - 273.15).toFixed(0) + '°C';
+            t2.innerText = data.list[1].dt_txt.slice(11, 16) + ' - ' + Number(data.list[1].main.temp - 273.15).toFixed(0) + '°C';
+            t3.innerText = data.list[2].dt_txt.slice(11, 16) + ' - ' + Number(data.list[2].main.temp - 273.15).toFixed(0) + '°C';
+            t4.innerText = data.list[3].dt_txt.slice(11, 16) + ' - ' + Number(data.list[3].main.temp - 273.15).toFixed(0) + '°C';
+            t5.innerText = data.list[4].dt_txt.slice(11, 16) + ' - ' + Number(data.list[4].main.temp - 273.15).toFixed(0) + '°C';
             let icon1 = data.list[0].weather[0].icon;
             let icon2 = data.list[1].weather[0].icon;
             let icon3 = data.list[2].weather[0].icon;
@@ -109,11 +110,11 @@ function initialSearch() {
     fetch(API_URL0hourly)
         .then(response => response.json())
         .then(data => { // this is a mess ))    COPY-PASTING IS A BAD HABIT )  but no time to clean this up Now, sorry ))) I'll refactor it later!
-            divHourlyTemp[0].innerText = data.list[0].dt_txt.slice(12, 16) + ' - ' + Number(data.list[0].main.temp - 273.15).toFixed(0) + '°C';
-            divHourlyTemp[1].innerText = data.list[1].dt_txt.slice(12, 16) + ' - ' + Number(data.list[1].main.temp - 273.15).toFixed(0) + '°C';
-            divHourlyTemp[2].innerText = data.list[2].dt_txt.slice(12, 16) + ' - ' + Number(data.list[2].main.temp - 273.15).toFixed(0) + '°C';
-            divHourlyTemp[3].innerText = data.list[3].dt_txt.slice(12, 16) + ' - ' + Number(data.list[3].main.temp - 273.15).toFixed(0) + '°C';
-            divHourlyTemp[4].innerText = data.list[4].dt_txt.slice(12, 16) + ' - ' + Number(data.list[4].main.temp - 273.15).toFixed(0) + '°C';
+            t1.innerText = data.list[0].dt_txt.slice(11, 16) + ' - ' + Number(data.list[0].main.temp - 273.15).toFixed(0) + '°C';
+            t2.innerText = data.list[1].dt_txt.slice(11, 16) + ' - ' + Number(data.list[1].main.temp - 273.15).toFixed(0) + '°C';
+            t3.innerText = data.list[2].dt_txt.slice(11, 16) + ' - ' + Number(data.list[2].main.temp - 273.15).toFixed(0) + '°C';
+            t4.innerText = data.list[3].dt_txt.slice(11, 16) + ' - ' + Number(data.list[3].main.temp - 273.15).toFixed(0) + '°C';
+            t5.innerText = data.list[4].dt_txt.slice(11, 16) + ' - ' + Number(data.list[4].main.temp - 273.15).toFixed(0) + '°C';
             let icon1 = data.list[0].weather[0].icon;
             let icon2 = data.list[1].weather[0].icon;
             let icon3 = data.list[2].weather[0].icon;
